@@ -1,0 +1,81 @@
+/* Menú principal */
+/* Menú principal */
+/* Menú principal */
+/* Menú principal */
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #111;
+  padding: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 0, 100, 0.2);
+  position: relative;
+}
+
+.nav-center {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ff99cc;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: linear-gradient(145deg, #1c1c1c, #2c2c2c);
+  box-shadow: 0 0 6px rgba(255, 0, 120, 0.3);
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #ff0077, #ff9900);
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 0, 150, 0.5);
+}
+
+.nav-link.active {
+  border: 2px solid #ff0077;
+  color: #ffccff;
+  box-shadow: 0 0 12px rgba(255, 0, 120, 0.8);
+}
+/* Botón salir */
+/* Botón salir igual tamaño y alineado a la izquierda */
+/* Botón salir alineado a la derecha */
+/* Botón salir completamente a la izquierda */
+.nav-link-1 {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ff99cc;
+  padding: 10px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: linear-gradient(145deg, #1c1c1c, #2c2c2c);
+  box-shadow: 0 0 6px rgba(255, 0, 120, 0.3);
+  margin-left: 32px;
+  margin-right: 0;
+  margin-top: 3px;
+  min-width: 0;
+  height: 44.9px;
+  align-self: flex-start;
+}
+
+.nav-link-1:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #d400ff, #f40000);
+  color: white;
+  box-shadow: 0 0 10px rgba(255, 0, 150, 0.5);
+}
+
+.nav-link-1.active {
+  border: 2px solid #ff0077;
+  color: #ffccff;
+  box-shadow: 0 0 12px rgba(255, 0, 120, 0.8);
+}

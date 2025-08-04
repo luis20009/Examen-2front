@@ -1,0 +1,66 @@
+/* Estilos para la lista de usuarios */
+.usuarios-container {
+  background: linear-gradient(135deg, #1a1a2e 60%, #16213e 100%);
+  border-radius: 18px;
+  box-shadow: 0 0 32px rgba(255, 0, 120, 0.18);
+  padding: 32px 24px;
+  max-width: 600px;
+  margin: 32px auto;
+  color: #f5f5dc;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.usuarios-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #ff66c4;
+  margin-bottom: 24px;
+  text-shadow: 0 0 8px #ff66c4;
+}
+
+.usuarios-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.usuarios-list li {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-bottom: 16px;
+  padding: 18px 20px;
+  box-shadow: 0 2px 12px rgba(255, 0, 120, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.usuarios-list li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 18px rgba(255, 0, 120, 0.18);
+}
+
+.usuarios-username {
+  font-weight: bold;
+  color: #ff99cc;
+  font-size: 1.1rem;
+}
+
+.usuarios-name {
+  color: #ffd700;
+  font-size: 1rem;
+}
+
+.usuarios-rol {
+  color: #00ffd0;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+.usuarios-empty {
+  text-align: center;
+  color: #ff3399;
+  font-size: 1.1rem;
+  margin-top: 24px;
+}

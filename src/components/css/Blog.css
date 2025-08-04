@@ -1,0 +1,176 @@
+.blog {
+  background: radial-gradient(circle at top left, #1d1d1d, #000000);
+  padding: 20px;
+  margin: 16px auto;
+  border-radius: 12px;
+  max-width: 600px;
+  color: #f4f4f4;
+  box-shadow: 0 0 30px rgba(255, 0, 150, 0.3);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.blog-summary > div {
+  margin: 10px 0;
+}
+
+button {
+  background: linear-gradient(to right, #ff5722, #ff9800);
+  border: none;
+  padding: 8px 14px;
+  margin: 6px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0.7);
+}
+
+.badge {
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin-top: 6px;
+}
+
+.Popular {
+  background-color: #ff0077;
+  color: white;
+  box-shadow: 0 0 8px #ff0077;
+}
+
+.Moderate {
+  background-color: #ffaa00;
+  color: white;
+  box-shadow: 0 0 8px #ffaa00;
+}
+
+.matese {
+  background-color: #777;
+  color: #fff;
+  box-shadow: 0 0 8px #555;
+}
+
+.blog-summary {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.blog {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-radius: 16px;
+  padding: 28px;
+  margin: 36px auto;
+  max-width: 720px;
+  box-shadow: 0 6px 32px rgba(255, 0, 120, 0.3);
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  letter-spacing: 0.4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 38px rgba(255, 0, 140, 0.4);
+}
+
+/* Estructura de resumen */
+.blog-summary > div {
+  margin-bottom: 12px;
+}
+
+.blog-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ff66c4;
+}
+
+.blog-author,
+.blog-nota,
+.blog-publicacion,
+.blog-user {
+  font-size: 1rem;
+  opacity: 0.88;
+}
+
+.blog-likes {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+/* Botones agrupados */
+.blog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.blog button {
+  background-color: #ff0066;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.blog button:hover {
+  background-color: #ff3399;
+  transform: scale(1.08);
+}
+
+.likes {
+  font-weight: bold;
+  color: #ff66c4;
+  font-size: 1.2rem;
+}
+
+/* Estilo para categoría dinámica */
+.badge {
+  display: inline-block;
+  padding: 6px 14px;
+  margin-top: 12px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Popular {
+  background-color: #ff0077;
+  color: white;
+  box-shadow: 0 0 8px #ff0077;
+}
+
+.Moderate {
+  background-color: #ffaa00;
+  color: black;
+  box-shadow: 0 0 8px #ffaa00;
+}
+
+.matese {
+  background-color: #555;
+  color: #fff;
+  box-shadow: 0 0 8px #777;
+}
