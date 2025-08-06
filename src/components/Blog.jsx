@@ -5,6 +5,13 @@ const Blog = ({ blog, updateBlog, deleteBlog, user }) => {
   const [info, setInfo] = useState(false)
   const [likes, setLikes] = useState(blog.likes)
   const [category, setCategory] = useState("")
+  
+  let autoCategory = "matese";
+if (likes >= 29) {
+  autoCategory = "Popular";
+} else if (likes > 8) {
+  autoCategory = "Moderate";
+}
 
   const handleLikes = () => {
     const newLikes = likes + 1
@@ -52,24 +59,29 @@ const Blog = ({ blog, updateBlog, deleteBlog, user }) => {
     <div className="blog">
       {!info ? (
         <div className="blog-summary">
-          <span className="blog-title">{blog.title}</span> by <span className="blog-author">{blog.author}</span>
-          <button onClick={toggleView} className="btn-view">👁️</button>
+          <span className="blog-title">{blog.title}</span> __ <span className="blog-author">{blog.user.username} <button onClick={toggleView} className="btn-view">👁️</button></span>
+          {/* <button onClick={toggleView} className="btn-view">👁️</button> */}
         </div>
       ) : (
         <div className="blog-summary">
           <div>
-            <span className="blog-title">Title: {blog.title}</span>
-            <button onClick={toggleView} className="btn-hide">🙈</button>
+            <span className="blog-title">{blog.title}</span> <button onClick={toggleView} className="btn-hide">🙈</button>
+             
           </div>
+          <div className="blog-user">{blog.user.name}</div>
           <div className="blog-nota">Nota: {blog.author}</div>
-          <div className="blog-publicacion">Publicacion: {blog.url}</div>
+          <div className="blog-publicacion">POST: {blog.url}</div>
+          {blog.user.username != user.username &&(
           <div className="blog-likes">
             Likes: <span className="likes">{likes}</span>
             <button onClick={handleLikes} className="btn-like">❤️</button>
             <button onClick={handleDisLikes} className="btn-dislike">💔</button>
-          </div>
-          <div className={`badge ${category}`}>Categoria: {category}</div>
-          <div className="blog-user">{blog.user.name}</div>
+          </div>)}
+          {blog.user.username === user.username && (
+            <div className={`badge ${category}`}>Categoria: {category}</div>
+          )}
+          <div className={`badge ${autoCategory}`}>Categoria: {autoCategory}</div>
+          
           {isOwner && <button onClick={handleDelete} className="btn-delete">🗑️</button>}
         </div>
       )}
